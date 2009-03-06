@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<syntax>
+    <head>
+        <name>HAML Syntax</name>
+        
+        <autocompleteoptions use-spelling-dictionary="no" />
+        
+        <charsintokens>
+            <![CDATA[_0987654321abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@#%.]]>
+        </charsintokens>
+    </head>
+    
+    <states>
+        <default id="Base" color="#000" inverted-color="#fff">        
+            <state id="HTML Comment" color="#236E25" font-style="italic">
+                <begin><regex>/</regex></begin>
+                <end><regex>[\n\r]</regex></end>
+            </state>
+            
+            <state id="Ruby Comment" color="#236E25" font-style="italic">
+                <begin><regex>-\s*#</regex></begin>
+                <end><regex>[\n\r]</regex></end>
+            </state>
+            
+            <!-- Red #FE1A1A -->
+            <state id="HTML Element" color="#881280" inverted-color="#fac586"  font-style="normal" font-weight="normal" useforautocomplete="no">  <!-- color="#d6771c" -->
+              <begin><regex>^\s*[^&amp;=-]{0,2}\s*[%\.#][\w_\.-]+</regex></begin>
+              <end><regex>[\n\r]</regex></end>
+            </state>
+            
+            <state id="Ruby Symbol" color="#16A0B8" font-style="normal">
+                <begin><regex>(?:\:[\w_\.-?]+)</regex></begin>
+                <end><regex>[\n\r\s=]</regex></end>
+            </state>
+            
+            <!-- From Ruby Mode -->
+            <state id="String with double quotes" type="string" color="#760f15" inverted-color="#f28720"  font-style="italic" font-weight="normal" usespellchecking="yes">
+                <begin><regex>"</regex></begin>
+                <end><regex>(((?&lt;!\\)(\\\\)*)|^)"</regex></end>
+                <!-- (see line above) This is for the escape codes -->
+                <keywords id="test" color="#669999" inverted-color="#669999"  font-style="normal" font-weight="normal" useforautocomplete="no">
+                    <regex>(#\{[^{]*\})</regex>
+                    <!-- regexp above *needs* the parens around the part to color change -->
+                </keywords>
+            </state>
+            
+            <!-- From Ruby Mode -->
+            <state id="String with single quotes" type="string" color="#760f15" inverted-color="#f48700"  font-style="italic" font-weight="normal" usespellchecking="yes">
+                <begin><regex>(?&lt;!\$)(?:')</regex></begin>
+                <end><regex>(((?&lt;!\\)(\\\\)*)|^)'</regex></end>
+            </state>
+            
+            <state id="Inline Ruby" color="#000" usesymbolsfrommode="Ruby" useautocompletefrommode="Ruby">
+                <begin><regex>[&amp;=-]\s*[^#]</regex></begin>
+                <end><regex>[\n\r]</regex></end>
+                
+                <import mode="Ruby" />
+            </state>
+        </default>
+    </states>
+</syntax>
