@@ -1,5 +1,7 @@
 h1. HAML.mode
 
+!<http://img.runlevel6.org/HAML.png(Screenshot)!
+
 HAML.mode is a HAML syntax definition for SubEthaEdit & Coda. This is a work in progress so please be patient ;)
 
 h2. Usage
