@@ -1,12 +1,12 @@
 h1. HAML.mode
 
-HAML.mode is a HAML syntax definition for SubEthaEdit/Coda. This is a work in progress so please be patient ;)
+HAML.mode is a HAML syntax definition for SubEthaEdit & Coda. This is a work in progress so please be patient ;)
 
 h2. Usage
 
 h3. Installation
 
-Simply check out this repo into either *<code>~/Library/Application Support/Coda/Modes</code>* or *<code>~/Library/Application Support/SubEthaEdit/Modes</code>*, be sure to name the directory *<code>HAML.mode</code>*.
+Simply check out this repo into either <code>~/Library/Application Support/Coda/Modes</code> or <code>~/Library/Application Support/SubEthaEdit/Modes</code>, be sure to name the directory <code>HAML.mode</code>.
 
 h2. Known Issues
 
@@ -15,6 +15,8 @@ h2. Known Issues
 h2. Author
 
 Written by Gianni Chiappetta - "Runlevel6":http://www.runlevel6.org/
+
+As soon as I heard "Carsten Nielsen":http://heycarsten.com/ was "in need":http://twitter.com/heycarsten/statuses/1285824850 of HAML syntax highlighting for Coda, I immediately dropped what I was doing, kicked my shit into gear, and wrote this definition. As they say ... "When in Rome".
 
 h3. Credits
 
