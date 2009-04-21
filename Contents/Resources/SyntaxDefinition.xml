@@ -28,7 +28,7 @@
               <end><regex>.(?=[&amp;={\[\s\r\n])</regex></end>
             </state>
             
-            <state id="Ruby Symbol" color="#16A0B8" font-style="normal">
+            <state id="Ruby Symbol" color="#D6771C" font-style="normal">
                 <begin><regex>(?:\:[\w_\.-?]+)</regex></begin>
                 <end><regex>[\n\r\s=]</regex></end>
             </state>
