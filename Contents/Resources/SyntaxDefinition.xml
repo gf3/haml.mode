@@ -42,6 +42,12 @@
                 <end><regex>(((?&lt;!\\)(\\\\)*)|^)'</regex></end>
             </state>
 
+            <state id="interpolated ruby" type="string" color="#760f15" inverted-color="#f48700"  font-style="italic" font-weight="normal" usespellchecking="yes">
+                <begin><regex>(?&lt;===)(?:.)</regex></begin>
+                <end><regex>[\r\n]</regex></end>
+                <import mode="Ruby" state="String with double quotes"/>
+            </state>
+
             <state id="Inline Ruby" color="#000" usesymbolsfrommode="Ruby" useautocompletefrommode="Ruby">
                 <begin><regex>(?:[&amp;!]?[^=]=|-(?!#))(?=\s*)</regex></begin>
                 <end><regex>[\n\r]</regex></end>
@@ -55,14 +61,6 @@
 
                 <import mode="Ruby" />
             </state>
-
-
-            <state id="interpolated ruby" type="string" color="#760f15" inverted-color="#f48700"  font-style="italic" font-weight="normal" usespellchecking="yes">
-                <begin><regex>(?&lt;===)(?:.)</regex></begin>
-                <end><regex>[\r\n]</regex></end>
-                <import mode="Ruby" state="String with double quotes"/>
-            </state>
-
         </default>
     </states>
 </syntax>
