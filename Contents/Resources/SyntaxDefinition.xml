@@ -28,20 +28,6 @@
               <end><regex>.(?=[&amp;={\[\s\r\n!])</regex></end>
             </state>
 
-            <!-- From Ruby Mode -->
-            <state id="String with double quotes" type="string" color="#760f15" inverted-color="#f28720"  font-style="italic" font-weight="normal" usespellchecking="yes">
-                <begin><regex>"</regex></begin>
-                <end><regex>(((?&lt;!\\)(\\\\)*)|^)"</regex></end>
-                <!-- (see line above) This is for the escape codes -->
-                <import mode="Ruby" state="String with double quotes"/>
-            </state>
-
-            <!-- From Ruby Mode -->
-            <state id="String with single quotes" type="string" color="#760f15" inverted-color="#f48700"  font-style="italic" font-weight="normal" usespellchecking="yes">
-                <begin><regex>(?&lt;!\$)(?:')</regex></begin>
-                <end><regex>(((?&lt;!\\)(\\\\)*)|^)'</regex></end>
-            </state>
-
             <state id="interpolated ruby" type="string" color="#760f15" inverted-color="#f48700"  font-style="italic" font-weight="normal" usespellchecking="yes">
                 <begin><regex>(?&lt;===)(?:.)</regex></begin>
                 <end><regex>[\r\n]</regex></end>
