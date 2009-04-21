@@ -38,10 +38,7 @@
                 <begin><regex>"</regex></begin>
                 <end><regex>(((?&lt;!\\)(\\\\)*)|^)"</regex></end>
                 <!-- (see line above) This is for the escape codes -->
-                <keywords id="test" color="#669999" inverted-color="#669999"  font-style="normal" font-weight="normal" useforautocomplete="no">
-                    <regex>(#\{[^{]*\})</regex>
-                    <!-- regexp above *needs* the parens around the part to color change -->
-                </keywords>
+                <import mode="Ruby" state="String with double quotes"/>
             </state>
             
             <!-- From Ruby Mode -->
