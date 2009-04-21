@@ -20,6 +20,8 @@ Written by Gianni Chiappetta - "Runlevel6":http://www.runlevel6.org/
 
 As soon as I heard "Carsten Nielsen":http://heycarsten.com/ was "in need":http://twitter.com/heycarsten/statuses/1285824850 of HAML syntax highlighting for Coda, I immediately dropped what I was doing, kicked my shit into gear, and wrote this definition. As they say ... "When in Rome".
 
+Modifications by "Kevin Glowacz":http://kevin.glowacz.info
+
 h3. Credits
 
 Thanks to "Panic":http://www.panic.com/ for creating a kick-ass editor!
