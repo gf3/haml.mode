@@ -48,7 +48,7 @@
             </state>
             
             <state id="Inline Ruby" color="#000" usesymbolsfrommode="Ruby" useautocompletefrommode="Ruby">
-                <begin><regex>[&amp;=-](?=\s*)(?!#)</regex></begin>
+                <begin><regex>(?:[&amp;!]?=|-(?!#))(?=\s*)</regex></begin>
                 <end><regex>[\n\r]</regex></end>
                 
                 <import mode="Ruby" />
