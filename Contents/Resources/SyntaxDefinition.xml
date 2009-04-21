@@ -28,11 +28,6 @@
               <end><regex>.(?=[&amp;={\[\s\r\n!])</regex></end>
             </state>
 
-            <state id="Ruby Symbol" color="#D6771C" font-style="normal">
-                <begin><regex>(?:\:[\w_\.-?]+)</regex></begin>
-                <end><regex>[\n\r\s=]</regex></end>
-            </state>
-
             <!-- From Ruby Mode -->
             <state id="String with double quotes" type="string" color="#760f15" inverted-color="#f28720"  font-style="italic" font-weight="normal" usespellchecking="yes">
                 <begin><regex>"</regex></begin>
@@ -53,6 +48,14 @@
 
                 <import mode="Ruby" />
             </state>
+
+            <state id="Ruby Hash Attribute" color="#000" usesymbolsfrommode="Ruby" useautocompletefrommode="Ruby">
+                <begin><regex>{</regex></begin>
+                <end><regex>[}\n\r]</regex></end>
+
+                <import mode="Ruby" />
+            </state>
+
 
             <state id="interpolated ruby" type="string" color="#760f15" inverted-color="#f48700"  font-style="italic" font-weight="normal" usespellchecking="yes">
                 <begin><regex>(?&lt;===)(?:.)</regex></begin>
