@@ -17,8 +17,8 @@
                 <end><regex>[\n\r]</regex></end>
             </state>
             
-            <state id="Ruby Comment" color="#236E25" font-style="italic">
-                <begin><regex>-\s*#</regex></begin>
+            <state id="HAML Comment" color="#236E25" font-style="italic">
+                <begin><regex>-#</regex></begin>
                 <end><regex>[\n\r]</regex></end>
             </state>
             
